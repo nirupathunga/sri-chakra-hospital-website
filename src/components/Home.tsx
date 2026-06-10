@@ -34,10 +34,6 @@ import { useLanguage } from './LanguageLayout';
 
 const homeTranslations = {
   hero: {
-    badge: {
-      en: "✨ Trusted clinical leader in Tiruppur District",
-      ta: "✨ திருப்பூர் மாவட்டத்தின் முன்னணி மருத்துவ சேவை"
-    },
     title: {
       en: "Advanced Healthcare, Close to Home",
       ta: "மேம்பட்ட மருத்துவம், உங்கள் இல்லம் தேடி"
@@ -398,10 +394,7 @@ export default function Home() {
           
           {/* Hero Left Content Text Container */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div id="hero-badge" className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FDE8F0] border border-[#E8C4D4] text-[#D63384] text-xs font-bold tracking-wide shadow-sm">
-              <span>{lang === 'en' ? homeTranslations.hero.badge.en : homeTranslations.hero.badge.ta}</span>
-            </div>
-            
+        
             <h1 id="hero-title" className="font-serif font-black text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-[#1A1A2E] leading-[1.12] tracking-tight text-balance">
               {lang === 'en' ? homeTranslations.hero.title.en : <span className="font-tamil">{homeTranslations.hero.title.ta}</span>}
             </h1>
