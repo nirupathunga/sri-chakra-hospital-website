@@ -1,0 +1,6 @@
+{
+  "name": "Sri Chakra Hospital Portal",
+  "description": "Bilingual Pink & White medical portal with English-Tamil switching, Playfair Display headers, and full contact layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

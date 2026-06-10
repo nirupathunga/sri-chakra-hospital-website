@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment - Sri Chakra Hospital Udumalpet</title>
+    
+    <!-- Meta description matching clinical details -->
+    <meta name="description" content="Book an appointment for consultation or surgery with Sri Chakra Hospital, Udumalpet. Laparoscopic surgery, gastroenterology, maternity, orthopaedics, and multi-speciality care since 2011." />
+    
+    <!-- External Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              tamil: ['Noto Sans Tamil', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Natively declared CSS custom properties */
+      :root {
+        --color-primary-pink: #D63384;
+        --color-deep-rose: #A0215C;
+        --color-soft-pink-bg: #FDE8F0;
+        --color-navy: #1A1A2E;
+        --color-charcoal: #555555;
+        --color-dusty-pink: #E8C4D4;
+        --color-soft-grey: #F7F0F3;
+      }
+
+      /* Language Switcher CSS engine matching dual-encoding system */
+      html[lang="en"] .lang-ta { display: none !important; }
+      html[lang="ta"] .lang-en { display: none !important; }
+      
+      /* Smooth transitions */
+      html { scroll-behavior: smooth; }
+      
+      /* Primary and outline buttons */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D63384;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px -1px rgba(214, 51, 132, 0.2);
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-primary:hover {
+        background-color: #A0215C;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 15px -3px rgba(214, 51, 132, 0.3);
+      }
+      
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #1A1A2E;
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid #E8C4D4;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-secondary:hover {
+        background-color: #FDF8FA;
+        border-color: #D63384;
+        color: #D63384;
+      }
+
+      /* Active language button state */
+      .active-lang-btn {
+        background-color: #D63384 !important;
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 min-h-screen flex flex-col justify-between font-sans selection:bg-[#D63384]/20 selection:text-[#A0215C]">
+
+    <!-- PART 1: HEADER SECTION WITH TOP UTILITY BAR (SYNCED LANGUAGE SWITCHER) -->
+    <header id="hospital-header" class="w-full relative z-40 shadow-sm font-sans">
+      <!-- Top Utility Bar (Pink & Navy Accent) -->
+      <div class="w-full py-2 bg-[#1A1A2E] text-white text-xs border-b border-[#A0215C]">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+          
+          <!-- Contact Info -->
+          <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+            <a href="tel:+919626200600" class="flex items-center gap-1.5 hover:text-[#D63384] transition-colors focus:outline-none" aria-label="Call Hospital">
+              <!-- Telephone Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#D63384]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span class="font-mono font-medium text-slate-200">+91 96 26 200 600</span>
+            </a>
+            <a href="mailto:contact@srichakrahospital.com" class="flex items-center gap-1.5 hover:text-[#D63384] transition-colors focus:outline-none" aria-label="Email Hospital">
+              <!-- Email Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#D63384]"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span class="text-slate-200">contact@srichakrahospital.com</span>
+            </a>
+          </div>
+
+          <!-- Emergency Alert / Status Toggles -->
+          <div class="flex items-center gap-4">
+            <!-- Live Alert Status -->
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D63384] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#D63384]"></span>
+              </span>
+              <span class="lang-en font-medium tracking-wide text-slate-300">Emergency Support 24/7 Available</span>
+              <span class="lang-ta font-tamil font-medium tracking-wide text-slate-300">அவசர சிகிச்சை பிரிவு 24 மணி நேரமும் செயல்படுகிறது</span>
+            </div>
+
+            <!-- Language Switcher Interface (Interactive buttons) -->
+            <div class="flex items-center bg-[#1F1F35] rounded-full p-0.5 border border-slate-700" role="group" aria-label="Select Language">
+              <button id="lang-btn-en" onclick="switchLanguage('en')" class="px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white focus:outline-none transition-all">
+                EN
+              </button>
+              <button id="lang-btn-ta" onclick="switchLanguage('ta')" class="px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 font-tamil focus:outline-none transition-all hover:text-[#D63384]">
+                தமிழ்
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Primary Main Navigation Element -->
+      <nav class="w-full bg-white border-b border-rose-100 py-3 md:py-4">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+          
+          <!-- Brand Logo / Title -->
+          <a href="/" class="flex items-center gap-3 group focus:outline-none" aria-label="Sri Chakra Hospital Home">
+            <!-- Healthcare Logo Icon -->
+            <div class="w-10 h-10 rounded-xl bg-[#FDE8F0] flex items-center justify-center border border-[#E8C4D4] group-hover:scale-105 transition-transform duration-300 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="fill-[#D63384]/10"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-bold text-xl md:text-2xl text-[#1A1A2E] leading-tight flex items-baseline">
+                <span>Sri Chakra</span>
+                <span class="text-[#D63384] ml-1">Hospital</span>
+              </span>
+              <span class="text-[9px] uppercase tracking-widest font-semibold text-[#A0215C] mt-0.5 font-tamil lang-ta">ஸ்ரீ சக்ரா மருத்துவமனை</span>
+              <span class="text-[9px] uppercase tracking-widest font-semibold text-[#A0215C] mt-0.5 lang-en">Udumalpet Multi-Speciality</span>
+            </div>
+          </a>
+
+          <!-- Desktop English & Tamil Menu Options -->
+          <div class="hidden md:flex items-center gap-8 font-medium text-sm text-[#1A1A2E]">
+            <!-- EN Menu Options -->
+            <div class="flex items-center gap-7 lang-en">
+              <a href="/#home" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Home</a>
+              <a href="/#about" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">About Us</a>
+              <a href="/#services" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Specialities</a>
+              <a href="/#doctors" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Doctors</a>
+              <a href="/#testimonials" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Reviews</a>
+              <a href="/#contact" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Contact</a>
+            </div>
+
+            <!-- TA Menu Options -->
+            <div class="flex items-center gap-7 lang-ta font-tamil">
+              <a href="/#home" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">முகப்பு</a>
+              <a href="/#about" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">எங்களைப் பற்றி</a>
+              <a href="/#services" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">சிறப்பு சிகிச்சைகள்</a>
+              <a href="/#doctors" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">மருத்துவர்கள்</a>
+              <a href="/#testimonials" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">மதிப்புரைகள்</a>
+              <a href="/#contact" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">தொடர்பு</a>
+            </div>
+          </div>
+
+          <!-- Navigation Actions Header -->
+          <div class="flex items-center gap-3">
+            <!-- Pink "Book Appointment" Action Button -->
+            <a href="/appointment.html" class="btn-primary" aria-label="Book an appointment">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span class="lang-en">Book Appointment</span>
+              <span class="lang-ta font-tamil">முன்பதிவு செய்ய</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-rose-50 text-[#1A1A2E] focus:outline-none" aria-expanded="false" aria-label="Toggle navigation menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Mobile Drawer Dropdown Menu -->
+        <div id="mobile-menu-nav" class="hidden md:hidden w-full bg-white border-t border-rose-100 py-3 mt-2 px-4 shadow-inner">
+          <div class="flex flex-col gap-3 text-sm text-[#1A1A2E] font-medium py-2">
+            <div class="flex flex-col gap-3 lang-en">
+              <a href="/#home" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Home</a>
+              <a href="/#about" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">About Us</a>
+              <a href="/#services" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Specialities</a>
+              <a href="/#doctors" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Doctors</a>
+              <a href="/#testimonials" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Reviews</a>
+              <a href="/#contact" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Contact</a>
+            </div>
+            <div class="flex flex-col gap-3 lang-ta font-tamil">
+              <a href="/#home" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50 text-[#D63384] font-semibold">முகப்பு</a>
+              <a href="/#about" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">எங்களைப் பற்றி</a>
+              <a href="/#services" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">சிறப்பு சிகிச்சைகள்</a>
+              <a href="/#doctors" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">மருத்துவர்கள்</a>
+              <a href="/#testimonials" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">மதிப்புரைகள்</a>
+              <a href="/#contact" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">தொடர்பு</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTION TITLE AND FLOATING SUBHEADER BACKGROUND -->
+    <div class="bg-gradient-to-b from-[#FDE8F0]/40 to-slate-50 border-b border-rose-100/50 py-10 md:py-14">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 text-center space-y-3">
+        <span class="text-xs uppercase font-bold text-[#D63384] tracking-widest block font-sans">
+          <span class="lang-en">Secure Patient Intake</span>
+          <span class="lang-ta font-tamil">பாதுகாக்கப்பட்ட நோயாளி பதிவு</span>
+        </span>
+        <h1 class="text-3xl md:text-4.5xl font-serif font-bold text-[#1A1A2E] leading-tight">
+          <span class="lang-en">Request a Consultation Callback</span>
+          <span class="lang-ta font-tamil">சிகிச்சை முன்பதிவு மற்றும் திரும்ப அழைப்பு</span>
+        </h1>
+        <p class="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <span class="lang-en">Skip waiting rooms. Log your medical callback request digitally and our designated reception desk will lock your consulting slot safely.</span>
+          <span class="lang-ta font-tamil font-medium">காத்திருப்புப் பட்டியலைத் தவிர்க்கவும். உங்கள் தகவல்களைப் பதிவு செய்து மருத்துவ ஆலோசனைக்கான நேரத்தை ஸ்ரீ சக்ரா உதவி மையம் மூலம் எளிதாக உறுதி செய்யுங்கள்.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- PART 2: MAIN CONTAINER SPLIT-LAYOUT -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 md:px-6 py-12 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+        <!-- LEFT COLUMN: HOSPITAL INFO DESK (Lg span 5) -->
+        <article class="lg:col-span-5 space-y-8 flex flex-col justify-start">
+          
+          <!-- Contact Card Desk Header -->
+          <div class="space-y-4">
+            <h2 class="text-xl md:text-2xl font-serif font-bold text-[#1A1A2E] border-b-2 border-[#E8C4D4] pb-2 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+              <span class="lang-en">Hospital Info Desk</span>
+              <span class="lang-ta font-tamil">தகவல் உதவி மையம்</span>
+            </h2>
+            <p class="text-xs text-slate-500 leading-relaxed font-sans">
+              <span class="lang-en font-medium">Sri Chakra Hospital is committed to providing elite medical consulting. Contact our administrative block directly for custom reports, ward reservation pricing, or package descriptions.</span>
+              <span class="lang-ta font-tamil text-[13px] leading-relaxed">ஸ்ரீ சக்ரா மருத்துவமனை எப்போதும் உன்னதமான சிகிச்சை வழங்க கடமைப்பட்டுள்ளது. கட்டண விவரங்கள், தங்கும் அறைகள் மற்றும் சிகிச்சை தொகுப்புகள் பற்றி அறிய எங்கள் நிர்வாகப் பிரிவை நேரில் தொடர்பு கொள்ளவும்.</span>
+            </p>
+          </div>
+
+          <!-- Quick Contact Cards Grid -->
+          <div class="grid grid-cols-1 gap-4">
+            
+            <!-- Phone Hotline Carrier -->
+            <div class="bg-white border border-rose-100 rounded-2xl p-5 flex items-start gap-4 hover:shadow-md transition-shadow group">
+              <div class="p-3 bg-[#FDE8F0] text-[#D63384] rounded-xl border border-[#E8C4D4] group-hover:bg-[#D63384] group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="space-y-1">
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 font-sans block">
+                  <span class="lang-en">Direct Hotline Reservation</span>
+                  <span class="lang-ta font-tamil">நேரடி முன்பதிவு எண்</span>
+                </span>
+                <a href="tel:+919626200600" class="text-[#1A1A2E] group-hover:text-[#D63384] font-mono font-bold text-lg md:text-xl transition-colors block">
+                  +91 96 26 200 600
+                </a>
+              </div>
+            </div>
+
+            <!-- Email Desk Carrier -->
+            <div class="bg-white border border-rose-100 rounded-2xl p-5 flex items-start gap-4 hover:shadow-md transition-shadow group">
+              <div class="p-3 bg-[#FDE8F0] text-[#D63384] rounded-xl border border-[#E8C4D4] group-hover:bg-[#D63384] group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="space-y-1">
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 font-sans block">
+                  <span class="lang-en">Clinical Registry Mail</span>
+                  <span class="lang-ta font-tamil">மின்னஞ்சல் முகவரி</span>
+                </span>
+                <a href="mailto:contact@srichakrahospital.com" class="text-[#1A1A2E] group-hover:text-[#D63384] font-semibold text-xs md:text-sm tracking-wide transition-colors block font-mono">
+                  contact@srichakrahospital.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Physical Location Address Carrier -->
+            <div class="bg-white border border-rose-100 rounded-2xl p-5 flex items-start gap-4 hover:shadow-md transition-shadow group">
+              <div class="p-3 bg-[#FDE8F0] text-[#D63384] rounded-xl border border-[#E8C4D4] group-hover:bg-[#D63384] group-hover:text-white transition-colors shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="space-y-1">
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 font-sans block">
+                  <span class="lang-en">Hospital Location</span>
+                  <span class="lang-ta font-tamil">அமைவிடம்</span>
+                </span>
+                <div class="text-xs text-slate-600 leading-relaxed font-sans font-medium">
+                  <p class="lang-en">4/147 Nehru Street, Udumalpet - 642126, Tiruppur District, Tamil Nadu</p>
+                  <p class="lang-ta font-tamil">4/147 நேரு தெரு, உடுமலைப்பேட்டை - 642126, திருப்பூர் மாவட்டம், தமிழ்நாடு</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Opening Hours Table -->
+          <div class="bg-white border border-rose-100 rounded-2xl overflow-hidden shadow-sm">
+            <div class="bg-[#1A1A2E] text-white px-5 py-3.5 flex justify-between items-center border-b border-[#A0215C]">
+              <span class="text-xs uppercase tracking-wider font-extrabold font-sans flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#D63384]"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span class="lang-en">Clinical Consultation Hours</span>
+                <span class="lang-ta font-tamil text-xs">சிகிச்சை ஆலோசனை நேரங்கள்</span>
+              </span>
+            </div>
+            <div class="p-1">
+              <table class="w-full text-xs text-slate-600 font-sans">
+                <thead>
+                  <tr class="bg-rose-50/50 text-[#1A1A2E] text-[10px] font-extrabold uppercase tracking-wider border-b border-rose-50">
+                    <th class="py-2.5 px-4 text-left">
+                      <span class="lang-en">Day / Class</span>
+                      <span class="lang-ta font-tamil">நாள் / வகை</span>
+                    </th>
+                    <th class="py-2.5 px-4 text-right">
+                      <span class="lang-en">Working Period</span>
+                      <span class="lang-ta font-tamil">ஆலோசனைக் காலம்</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="py-3 px-4 font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Weekdays (Mon - Fri)</span>
+                      <span class="lang-ta font-tamil font-semibold text-[11px]">வார நாட்கள் (திங்கள் - வெள்ளி)</span>
+                    </td>
+                    <td class="py-3 px-4 text-right font-mono text-[#D63384] font-bold">
+                      <span class="lang-en">8:00 AM - 8:00 PM</span>
+                      <span class="lang-ta font-tamil font-mono">காலை 8:00 - இரவு 8:00</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="py-3 px-4 font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Saturdays</span>
+                      <span class="lang-ta font-tamil font-semibold text-[11px]">சனிக்கிழமை</span>
+                    </td>
+                    <td class="py-3 px-4 text-right font-mono text-[#D63384] font-bold">
+                      <span class="lang-en">8:00 AM - 5:00 PM</span>
+                      <span class="lang-ta font-tamil font-mono">காலை 8:00 - மாலை 5:00</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="py-3 px-4 font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Sundays</span>
+                      <span class="lang-ta font-tamil font-semibold text-[11px]">ஞாயிற்றுக்கிழமை</span>
+                    </td>
+                    <td class="py-3 px-4 text-right font-mono text-emerald-600 font-bold">
+                      <span class="lang-en">9:00 AM - 1:00 PM</span>
+                      <span class="lang-ta font-tamil font-mono">காலை 9:00 - மதியம் 1:00</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <!-- Callback confirmation note -->
+            <div class="m-4 mt-1 bg-[#FDE8F0]/60 border border-[#E8C4D4]/50 p-4 rounded-xl flex items-start gap-2.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0"><polygon points="12 2 2 22 22 22 12 2"></polygon><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              <div class="text-[11px] leading-relaxed text-[#1A1A2E]">
+                <strong class="font-bold tracking-wide uppercase lang-en block mb-0.5">Callback Assurance Note</strong>
+                <strong class="font-bold tracking-wide uppercase lang-ta font-tamil block mb-0.5">திரும்பவும் அழைப்பின் உறுதிமொழி</strong>
+                <p class="lang-en text-slate-500">Our patient relations team will call you back within 2 hours to confirm your appointment slot and secure clinical priority parameters.</p>
+                <p class="lang-ta font-tamil text-slate-500 mt-0.5">உங்களது படிவம் சமர்ப்பிக்கப்பட்ட 2 மணி நேரத்திற்குள் மருத்துவமனை பிரதிநிதி உங்களை அழைத்து, உங்களது சிகிச்சை நேரத்தை உறுதி செய்வார்.</p>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- RIGHT COLUMN: CALLBACK REQUEST FORM (Lg span 7) -->
+        <section class="lg:col-span-7">
+          
+          <!-- Core Interactive Booking Card wrapper -->
+          <div id="booking-card" class="bg-white border-2 border-[#E8C4D4] rounded-3xl overflow-hidden shadow-xl">
+            
+            <!-- Header mini banner -->
+            <div class="bg-[#1A1A2E] p-6 text-white text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-[#A0215C]">
+              <div>
+                <h3 class="text-white font-bold font-serif text-lg mb-1 flex items-center justify-center sm:justify-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v1a7 7 0 0 1-14 0v-1"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                  <span class="lang-en font-serif font-bold text-lg">Digital Registrar</span>
+                  <span class="lang-ta font-tamil text-[16px] font-bold">டிஜிட்டல் முன்பதிவுப் படிவம்</span>
+                </h3>
+                <p class="text-xs text-slate-300">
+                  <span class="lang-en">No advance billing or platform service charges. Secure clinical dispatch.</span>
+                  <span class="lang-ta font-tamil">முன்பதிவுக் கட்டணம் எதுவும் தேவையில்லை. பாதுகாப்பான பதிவு.</span>
+                </p>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono font-bold bg-[#A0215C]/40 border border-[#D63384] text-white px-3 py-1 rounded-full whitespace-nowrap">
+                <span class="relative flex h-1.5 w-1.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400"></span>
+                </span>
+                <span class="lang-en">Response Queue Active</span>
+                <span class="lang-ta font-tamil text-[10px]">உடனடி சேவை</span>
+              </div>
+            </div>
+
+            <!-- Form section and response panel -->
+            <div class="p-6 md:p-8 relative">
+              
+              <!-- Success confirmation state panel (hided by default) -->
+              <div id="success-panel" class="hidden text-center py-12 space-y-6 animate-[fadeIn_0.4s_ease-out]">
+                <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto border-2 border-emerald-100 shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                
+                <div class="space-y-3">
+                  <h3 class="font-serif font-bold text-2.5xl text-slate-800 leading-snug">
+                    <span class="lang-en">Callback Requested Successfully!</span>
+                    <span class="lang-ta font-tamil">நேரப்பதிவு வெற்றிகரமாக முடிந்தது!</span>
+                  </h3>
+                  <p class="text-xs text-slate-500 max-w-md mx-auto leading-relaxed font-sans font-medium">
+                    <span class="lang-en">Your consultation token is locked. A lead intake supervisor from Sri Chakra Hospital will dial your mobile number within 2 hours to confirm details. Thank you for choosing us!</span>
+                    <span class="lang-ta font-tamil text-[13px] leading-relaxed">தாங்கள் விரும்பிய ஆலோசனை நேரம் வெற்றிகரமாகப் பதியப்பட்டது. ஸ்ரீ சக்ரா மருத்துவமனை முன்னுரிமை அதிகாரி 2 மணி நேரத்திற்குள் உங்களது மொபைல் எண்ணை அழைத்து நேரத்தை உறுதி செய்வார். நன்றி!</span>
+                  </p>
+                </div>
+
+                <!-- Custom Interactive Confirmation Ticket Receipt -->
+                <div class="bg-gradient-to-br from-slate-50 to-white p-5 rounded-2xl max-w-sm mx-auto border border-rose-100/70 text-left space-y-2 border-dashed shadow-sm text-xs font-mono text-slate-600">
+                  <div class="flex justify-between border-b border-slate-100 pb-2 mb-2">
+                    <span class="font-sans font-bold text-slate-700">SRI CHAKRA CLINICAL DISPATCH</span>
+                    <span class="text-[#D63384] font-bold">2026/SEC-PRI</span>
+                  </div>
+                  <p class="flex justify-between">
+                    <span class="font-sans text-slate-400">Patient:</span> 
+                    <span id="ticket-patient-name" class="font-bold text-slate-800">Ram Kumar</span>
+                  </p>
+                  <p class="flex justify-between">
+                    <span class="font-sans text-slate-400">Mobile:</span> 
+                    <span id="ticket-patient-phone" class="font-mono font-bold text-slate-800">96262 00600</span>
+                  </p>
+                  <p class="flex justify-between">
+                    <span class="font-sans text-slate-400">Department:</span> 
+                    <span id="ticket-department" class="font-sans font-bold text-slate-800">Laparoscopic Surgery</span>
+                  </p>
+                  <p class="flex justify-between">
+                    <span class="font-sans text-slate-400">Proposed Slot:</span> 
+                    <span id="ticket-slot" class="font-mono font-bold text-slate-800">2026-06-15</span>
+                  </p>
+                  <div class="bg-[#FDE8F0]/30 border border-[#E8C4D4]/30 rounded-lg p-2.5 mt-2.5 text-[11px] text-[#A0215C] text-center font-sans font-bold">
+                    <span class="lang-en">🔐 Secure Clinical Token Generated</span>
+                    <span class="lang-ta font-tamil">🔐 நோயாளி டோக்கன் பாதுகாக்கப்பட்டது</span>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <button type="button" onclick="resetFormState()" class="btn-secondary px-5 py-2 hover:bg-slate-50">
+                    <span class="lang-en">Request Another Callback</span>
+                    <span class="lang-ta font-tamil">மற்றொரு நேரப்பதிவு செய்க</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- General Form Area -->
+              <form id="appointment-form" onsubmit="handleSecureBookingSubmit(event)" class="space-y-6">
+                
+                <!-- Client Side Dynamic Error Display -->
+                <div id="error-message-box" class="hidden bg-rose-50 border border-rose-200 text-rose-600 p-4 rounded-xl text-xs flex items-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-5 h-5 text-rose-500 shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  <span id="error-text"></span>
+                </div>
+
+                <!-- Fields Grid Rows -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  
+                  <!-- Patient Full Name Field (Required) -->
+                  <div class="space-y-1.5">
+                    <label for="patient-name" class="text-xs font-bold text-[#1A1A2E] flex justify-between">
+                      <span>
+                        <span class="lang-en">Patient's Full Name</span>
+                        <span class="lang-ta font-tamil text-[11px]">நோயாளியின் முழுப் பெயர்</span>
+                        <span class="text-[#D63384] ml-0.5">*</span>
+                      </span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="patient-name" 
+                      name="name" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-medium placeholder-slate-400 transition-all font-sans bg-slate-50/30 text-slate-800"
+                      required
+                    />
+                  </div>
+
+                  <!-- Mobile Number Field (Required) -->
+                  <div class="space-y-1.5">
+                    <label for="patient-phone" class="text-xs font-bold text-[#1A1A2E] flex justify-between">
+                      <span>
+                        <span class="lang-en">Mobile Connection Number</span>
+                        <span class="lang-ta font-tamil text-[11px]">கைபேசி தொடர்பு எண்</span>
+                        <span class="text-[#D63384] ml-0.5">*</span>
+                      </span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="patient-phone" 
+                      name="phone" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-semibold placeholder-slate-400 transition-all font-mono bg-slate-50/30 text-slate-800"
+                      required
+                    />
+                  </div>
+
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  
+                  <!-- Email Address (Optional) -->
+                  <div class="space-y-1.5">
+                    <label for="patient-email" class="text-xs font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Email Address (Optional)</span>
+                      <span class="lang-ta font-tamil text-[11px]">மின்னஞ்சல் முகவரி (விருப்பத்திற்குரியது)</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="patient-email" 
+                      name="email" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-medium placeholder-slate-400 transition-all font-mono bg-slate-50/30 text-slate-800"
+                    />
+                  </div>
+
+                  <!-- Department choice Dropdown -->
+                  <div class="space-y-1.5">
+                    <label for="patient-speciality" class="text-xs font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Target Department Speciality</span>
+                      <span class="lang-ta font-tamil text-[11px]">சிகிச்சைத் துறைத் தேர்வு</span>
+                    </label>
+                    <select 
+                      id="patient-speciality" 
+                      name="speciality"
+                      class="w-full px-3 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-semibold bg-white transition-all text-[#1A1A2E] font-sans"
+                    >
+                      <option value="laparoscopic" data-en="Advanced Laparoscopic Surgery" data-ta="மேம்பட்ட லேப்ராஸ்கோபி அறுவை சிகிச்சை" selected>Advanced Laparoscopic Surgery</option>
+                      <option value="gastroenterology" data-en="Gastroenterology & GI Endoscopy" data-ta="இரைப்பை குடல் மற்றும் எண்டோஸ்கோபி">Gastroenterology & GI Endoscopy</option>
+                      <option value="obgyn" data-en="Obstetrics & Gynaecology (Maternity)" data-ta="மகப்பேறியல் மற்றும் பெண் நோயியல்">Obstetrics & Gynaecology (Maternity)</option>
+                      <option value="orthopedics" data-en="Orthopaedics & Joint Care" data-ta="எலும்பியல் மற்றும் மூட்டு சிகிச்சை">Orthopaedics & Joint Care</option>
+                      <option value="oncology" data-en="Oncology Diagnostics & Screenings" data-ta="புற்றுநோய் கண்டறிதல் மற்றும் பரிசோதனை">Oncology Diagnostics & Screenings</option>
+                      <option value="urology" data-en="Urology Clinics" data-ta="சிறுநீரக சிறப்பு மருத்துவத் துறை">Urology Clinics</option>
+                      <option value="paediatrics" data-en="Paediatrics & Child Health" data-ta="குழந்தைகள் நல சிறப்பு மருத்துவம்">Paediatrics & Child Health</option>
+                      <option value="general-medicine" data-en="General Medicine & Diabetology" data-ta="பொது மருத்துவம் மற்றும் சர்க்கரை நோய்">General Medicine & Diabetology</option>
+                      <option value="general-surgery" data-en="General Surgical Operation" data-ta="பொது அறுவைசிகிச்சை பிரிவு">General Surgical Operation</option>
+                      <option value="cardiology" data-en="Cardiology & Chest Clinic" data-ta="இருதய மற்றும் மாரடைப்பு சிகிச்சை">Cardiology & Chest Clinic</option>
+                      <option value="emergency" data-en="Emergency & Trauma Unit 24/7" data-ta="அவசர மற்றும் தீவிர விபத்து சிகிச்சைப்பிரிவு 24/7">Emergency & Trauma Unit 24/7</option>
+                    </select>
+                  </div>
+
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  
+                  <!-- Target Calendar Date (Required) -->
+                  <div class="space-y-1.5">
+                    <label for="patient-date" class="text-xs font-bold text-[#1A1A2E] flex justify-between">
+                      <span>
+                        <span class="lang-en">Preferred Date</span>
+                        <span class="lang-ta font-tamil text-[11px]">விருப்பமான தேதி</span>
+                        <span class="text-[#D63384] ml-0.5">*</span>
+                      </span>
+                    </label>
+                    <input 
+                      type="date" 
+                      id="patient-date" 
+                      name="date" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-semibold bg-white transition-all text-[#1A1A2E] font-mono"
+                      required
+                    />
+                  </div>
+
+                  <!-- Preferred Slot Dropdown -->
+                  <div class="space-y-1.5">
+                    <label for="patient-time" class="text-xs font-bold text-[#1A1A2E]">
+                      <span class="lang-en">Preferred Time Slot</span>
+                      <span class="lang-ta font-tamil text-[11px]">விருப்பமான நேரக் காலம்</span>
+                    </label>
+                    <select 
+                      id="patient-time" 
+                      name="time"
+                      class="w-full px-3 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-semibold bg-white transition-all text-[#1A1A2E] font-sans"
+                    >
+                      <option value="morning" data-en="Morning (8:30 AM - 1:00 PM)" data-ta="காலை (காலை 8:30 - பகல் 1:00)" selected>Morning (8:30 AM - 1:00 PM)</option>
+                      <option value="afternoon" data-en="Afternoon (2:00 PM - 5:00 PM)" data-ta="மதியம் (பகல் 2:00 - மாலை 5:00)">Afternoon (2:00 PM - 5:00 PM)</option>
+                      <option value="evening" data-en="Evening (5:00 PM - 8:00 PM)" data-ta="மாலை (மாலை 5:00 - இரவு 8:00)">Evening (5:00 PM - 8:00 PM)</option>
+                    </select>
+                  </div>
+
+                </div>
+
+                <!-- Message symptoms Textarea -->
+                <div class="space-y-1.5">
+                  <label for="patient-symptoms" class="text-xs font-bold text-[#1A1A2E]">
+                    <span class="lang-en">Symptom Descriptions or Concerns (Optional)</span>
+                    <span class="lang-ta font-tamil text-[11px]">நோயாளி அறிகுறிகள் அல்லது குறிப்புகள் (விருப்பத்திற்குரியது)</span>
+                  </label>
+                  <textarea 
+                    id="patient-symptoms" 
+                    name="notes" 
+                    rows="4" 
+                    class="w-full px-4 py-2.5 rounded-xl border border-[#E8C4D4] focus:outline-none focus:border-[#D63384] text-xs font-medium placeholder-slate-400 transition-all font-sans bg-slate-50/30 text-slate-800"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Area -->
+                <div class="pt-3">
+                  <button 
+                    type="submit" 
+                    id="submit-form-btn"
+                    class="w-full btn-primary py-3.5 flex items-center justify-center font-bold font-sans cursor-pointer gap-2 select-none"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span class="lang-en">Request Callback Now</span>
+                    <span class="lang-ta font-tamil">உடனே திரும்ப அழைக்க கோரவும்</span>
+                  </button>
+                </div>
+
+                <!-- HIPAA Security Seal -->
+                <p class="text-[10px] text-center text-slate-400 font-sans leading-relaxed pt-1 border-t border-slate-100 flex items-center justify-center gap-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-500"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span class="lang-en">Your health registry is encrypted. HIPAA Privacy Rule standards are applied.</span>
+                  <span class="lang-ta font-tamil">தனிநபர் விவரங்கள் மருத்துவ ஒழுங்குமுறை சட்டங்களின்படி முழுமையாகப் பாதுகாக்கப்படுகிறது.</span>
+                </p>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <!-- PART 3: STATIC COMPREHENSIVE FOOTER WITH LOCATION MAP -->
+    <footer id="hospital-footer" class="w-full bg-[#1A1A2E] text-slate-300 pt-16 pb-8 border-t-2 border-[#D63384] font-sans mt-12">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        
+        <!-- main footer grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+          
+          <!-- Column 1: Hospital Mission Statement -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-[#A0215C] flex items-center justify-center border border-[#D63384] shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <span class="font-serif font-bold text-xl text-white">
+                <span>Sri Chakra</span>
+                <span class="text-[#D63384]">Hospital</span>
+              </span>
+            </div>
+            
+            <p class="lang-en text-xs text-slate-400 leading-relaxed mt-2 font-sans">
+              Providing high-quality compassionate care to the Udumalpet community. Embellished with top-tier multi-speciality diagnosis and modern critical emergency facilities.
+            </p>
+            <p class="lang-ta font-tamil text-xs text-slate-400 leading-relaxed mt-2 leading-relaxed">
+              உடுமலைப்பேட்டை மக்களுக்கு உயர்தர மற்றும் கனிவான மருத்துவ சேவைகளை வழங்கி வருகிறோம். நவீன அவசர சிகிச்சை தொழில்நுட்பங்களுடன் சிறந்த உள்நோயாளிகள் வசதி கொண்டது.
+            </p>
+
+            <!-- Social Media Handles -->
+            <div class="flex items-center gap-3 mt-2 text-slate-400">
+              <span class="text-xs uppercase font-bold tracking-widest text-[#D63384] lang-en mr-1">Follow Us</span>
+              <span class="text-xs uppercase font-bold tracking-widest text-[#D63384] lang-ta font-tamil mr-1">பின்தொடரவும்</span>
+              <a href="#facebook" class="hover:text-white transition-colors" aria-label="Facebook Page"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="#youtube" class="hover:text-white transition-colors" aria-label="YouTube Channel"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Navigation Links -->
+          <div class="flex flex-col gap-4 md:pl-4">
+            <div>
+              <h4 class="text-white text-xs font-bold tracking-wider uppercase mb-1 lang-en">Quick Links</h4>
+              <h4 class="text-white font-tamil text-xs font-bold tracking-wider uppercase mb-1 lang-ta">விரைவு இணைப்புகள்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <ul class="flex flex-col gap-2.5 text-xs text-slate-400 font-sans">
+              <li class="lang-en"><a href="/#home" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Home</a></li>
+              <li class="lang-ta font-tamil"><a href="/#home" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> முகப்பு</a></li>
+
+              <li class="lang-en"><a href="/#about" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> About Us</a></li>
+              <li class="lang-ta font-tamil"><a href="/#about" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> எங்களைப் பற்றி</a></li>
+
+              <li class="lang-en"><a href="/#services" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Specialities & Services</a></li>
+              <li class="lang-ta font-tamil"><a href="/#services" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> சிறப்பு சிகிச்சைகள்</a></li>
+
+              <li class="lang-en"><a href="/#doctors" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Doctor Schedule</a></li>
+              <li class="lang-ta font-tamil"><a href="/#doctors" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> மருத்துவர்கள் அட்டவணை</a></li>
+
+              <li class="lang-en"><a href="/appointment.html" class="hover:text-white transition-colors flex items-center gap-2 text-white font-semibold"><span>•</span> Appointment Booking</a></li>
+              <li class="lang-ta font-tamil"><a href="/appointment.html" class="hover:text-white transition-colors flex items-center gap-2 text-white font-semibold"><span>•</span> இணையவழி முன்பதிவு</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact & Opening hours brief -->
+          <div class="flex flex-col gap-4">
+            <div>
+              <h4 class="text-white text-xs font-bold tracking-wider uppercase mb-1 lang-en">Contact & Hours</h4>
+              <h4 class="text-white font-tamil text-xs font-bold tracking-wider uppercase mb-1 lang-ta">தொடர்பு & நேரம்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <div class="flex flex-col gap-3 text-xs text-slate-400 font-sans leading-relaxed">
+              <div class="flex items-start gap-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" class="mt-0.5 shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div>
+                  <strong class="text-white lang-en">Sri Chakra Hospital</strong>
+                  <strong class="text-white font-tamil lang-ta">ஸ்ரீ சக்ரா மருத்துவமனை</strong>
+                  <p class="lang-en mt-0.5">4/147 Nehru Street, Udumalpet - 642126, Tiruppur Dist</p>
+                  <p class="lang-ta font-tamil mt-0.5 text-slate-400">4/147 நேரு தெரு, உடுமலைப்பேட்டை - 642126</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2.5 pt-1.5 border-t border-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div>
+                  <strong class="text-white lang-en">Emergency Response</strong>
+                  <strong class="text-white font-tamil lang-ta">அவசர சிகிச்சைப்பிரிவு</strong>
+                  <p class="text-[#D63384] font-bold mt-0.5 tracking-wide">24 Hours / 7 Days Active</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 4: Location Map Graphic Representation -->
+          <div class="flex flex-col gap-4">
+            <div>
+              <h4 class="text-white text-xs font-bold tracking-wider uppercase mb-1 lang-en">Clinical Location Map</h4>
+              <h4 class="text-white font-tamil text-xs font-bold tracking-wider uppercase mb-1 lang-ta">அமைவிட வரைபடம்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <div class="relative w-full rounded-xl overflow-hidden border border-slate-800 bg-[#161626]" style="aspect-ratio: 4/3;">
+              <div class="absolute inset-0 bg-[#e8ecf4] opacity-80 flex items-center justify-center pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0">
+                  <defs>
+                    <pattern id="grid-footer" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfd7e6" stroke-width="0.5"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-footer)" />
+                  <!-- Roads -->
+                  <path d="M-10,50 L200,80 L350,110" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M-10,50 L200,80 L350,110" fill="none" stroke="#ffebc5" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M120,-10 L140,200" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+                  <path d="M120,-10 L140,200" fill="none" stroke="#ffebc5" stroke-width="6" stroke-linecap="round"/>
+                  <circle cx="132" cy="71" r="24" fill="#D63384" fill-opacity="0.12"/>
+                  <rect x="25" y="15" width="45" height="25" rx="3" fill="#cfebd3" stroke="#b0dab6" stroke-width="1"/>
+                </svg>
+              </div>
+              
+              <!-- Hot Marker Pin -->
+              <div class="absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <span class="relative flex h-4 w-4">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D63384] opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-4 w-4 bg-[#D63384] border border-white shadow-md"></span>
+                </span>
+                <span class="bg-slate-900 border border-[#D63384] text-white text-[8px] font-bold py-0.5 px-1 rounded-sm mt-0.5">Sri Chakra</span>
+              </div>
+
+              <!-- Google Maps Link Directions -->
+              <div class="absolute bottom-0 inset-x-0 bg-slate-950/85 p-2 backdrop-blur-sm flex justify-between items-center text-[9px] font-sans">
+                <span class="font-mono text-slate-400">10.5899° N, 77.2471° E</span>
+                <a href="https://maps.google.com/?q=Sri+Chakra+Hospital+Nehru+Street+Udumalpet" target="_blank" rel="noopener noreferrer" class="text-[#D63384] hover:text-[#FFFFFF] transition-colors font-bold flex items-center gap-1 focus:outline-none" aria-label="Open Directions in Google Maps">
+                  <span class="lang-en">Directions</span>
+                  <span class="lang-ta font-tamil">திசைவழி</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full h-px bg-slate-800 my-6"></div>
+
+        <!-- Copyright footer row -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-sans">
+          <div>
+            <p class="lang-en">© 2026 Sri Chakra Hospital. All rights reserved. Registered Multi-Speciality Clinic, Udumalpet.</p>
+            <p class="lang-ta font-tamil">© 2026 ஸ்ரீ சக்ரா மருத்துவமனை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. உடுமலைப்பேட்டை.</p>
+          </div>
+          <div class="flex items-center gap-6 font-semibold">
+            <a href="#privacy" class="hover:text-slate-300 transition-colors">
+              <span class="lang-en">Privacy Policy</span>
+              <span class="lang-ta font-tamil">தனியுரிமைக் கொள்கை</span>
+            </a>
+            <a href="#disclaimer" class="hover:text-slate-300 transition-colors">
+              <span class="lang-en">Disclaimer</span>
+              <span class="lang-ta font-tamil">பொறுப்புத் துறப்பு</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT ENGINE FOR REGISTRATION -->
+    <script>
+      // Global Language State tracking sync using localStorage cache layer
+      let currentLang = localStorage.getItem('srichakra_lang') || 'en';
+
+      /**
+       * Primary Switch Language worker
+       * @param {string} langCode 'en' or 'ta'
+       */
+      function switchLanguage(langCode) {
+        currentLang = langCode;
+        localStorage.setItem('srichakra_lang', langCode);
+        document.documentElement.setAttribute('lang', langCode);
+        
+        // Sync active selector styling flags
+        const btnEn = document.getElementById('lang-btn-en');
+        const btnTa = document.getElementById('lang-btn-ta');
+        
+        if (langCode === 'en') {
+          if (btnEn) btnEn.classList.add('active-lang-btn');
+          if (btnTa) btnTa.classList.remove('active-lang-btn');
+          
+          btnEn.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white focus:outline-none transition-all";
+          btnTa.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 font-tamil focus:outline-none transition-all hover:text-[#D63384]";
+        } else {
+          if (btnTa) btnTa.classList.add('active-lang-btn');
+          if (btnEn) btnEn.classList.remove('active-lang-btn');
+          
+          btnEn.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 focus:outline-none transition-all hover:text-[#D63384]";
+          btnTa.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white font-tamil focus:outline-none transition-all";
+        }
+
+        // Keep Option select element names matched bilingually
+        document.querySelectorAll('[data-en][data-ta]').forEach(el => {
+          if (el.tagName === 'OPTION') {
+            el.textContent = el.getAttribute('data-' + langCode);
+          }
+        });
+
+        // Set bilingual placeholder parameters
+        const nameInput = document.getElementById('patient-name');
+        const phoneInput = document.getElementById('patient-phone');
+        const emailInput = document.getElementById('patient-email');
+        const symptomsInput = document.getElementById('patient-symptoms');
+
+        if (langCode === 'en') {
+          if (nameInput) nameInput.placeholder = "e.g. Ram Kumar";
+          if (phoneInput) phoneInput.placeholder = "e.g. 96262 00600";
+          if (emailInput) emailInput.placeholder = "e.g. ram@gmail.com (Optional)";
+          if (symptomsInput) symptomsInput.placeholder = "e.g. Acid reflux, routine checkup... (Optional)";
+        } else {
+          if (nameInput) nameInput.placeholder = "எ.கா. நித்யா குமார்";
+          if (phoneInput) phoneInput.placeholder = "எ.கா. 96262 00600";
+          if (emailInput) emailInput.placeholder = "எ.கா. nithya@gmail.com (விருப்பத்திற்குரியது)";
+          if (symptomsInput) symptomsInput.placeholder = "எ.கா. நெஞ்செரிச்சல், பொதுவான ஆலோசனை... (விருப்பத்திற்குரியது)";
+        }
+      }
+
+      /**
+       * Toggle Mobile Menu visibility Drawer helper
+       */
+      function toggleMobileMenu() {
+        const menuNav = document.getElementById('mobile-menu-nav');
+        const btn = document.getElementById('mobile-menu-btn');
+        if (menuNav) {
+          const isHidden = menuNav.classList.contains('hidden');
+          if (isHidden) {
+            menuNav.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+          } else {
+            menuNav.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        }
+      }
+
+      /**
+       * Client side form interception & validation engine
+       * @param {Event} e Submit Event handler
+       */
+      function handleSecureBookingSubmit(e) {
+        e.preventDefault();
+        
+        const errBox = document.getElementById('error-message-box');
+        const errText = document.getElementById('error-text');
+        const submitBtn = document.getElementById('submit-form-btn');
+        
+        // Form Inputs
+        const nameVal = document.getElementById('patient-name').value.trim();
+        const phoneVal = document.getElementById('patient-phone').value.trim();
+        const emailVal = document.getElementById('patient-email').value.trim();
+        const specialitySelect = document.getElementById('patient-speciality');
+        const deptLabel = specialitySelect.options[specialitySelect.selectedIndex].getAttribute('data-' + currentLang);
+        const dateVal = document.getElementById('patient-date').value;
+        const timeSelect = document.getElementById('patient-time');
+        const timeLabel = timeSelect.options[timeSelect.selectedIndex].getAttribute('data-' + currentLang);
+
+        // Hide Errors at Start of sequence
+        if (errBox) errBox.classList.add('hidden');
+
+        // Validation 1: Check Required
+        if (!nameVal || !phoneVal || !dateVal) {
+          showFormError(
+            currentLang === 'en' ? 'Please fill out all required fields marked with *.' : 'நட்சத்திரக்குறியீடு (*) இடப்பட்ட அனைத்து புலங்களையும் பூர்த்தி செய்யவும்.',
+            errTextBoxElements
+          );
+          return;
+        }
+
+        // Validation 2: Standard 10-Digit Phone check (strip non-digits first)
+        const cleanedPhone = phoneVal.replace(/\D/g, '');
+        if (cleanedPhone.length !== 10) {
+          showFormError(
+            currentLang === 'en' ? 'Please enter a valid 10-digit mobile connection number.' : 'சரியான 10-இலக்க கைபேசி எண்ணை உள்ளிடவும்.',
+            errBox,
+            errText
+          );
+          return;
+        }
+
+        // Validation 3: Date cannot be in the past
+        const selectedDate = new Date(dateVal);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+        if (selectedDate < today) {
+          showFormError(
+            currentLang === 'en' ? 'Preferred appointment date cannot be in the past.' : 'விரும்பிய முன்பதிவுத் தேதி முந்தைய நாளாக இருக்க முடியாது.',
+            errBox,
+            errText
+          );
+          return;
+        }
+
+        // Load visual loading feedback state on Submit action (anti-spam, double submit preventive measure)
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.style.opacity = '0.7';
+          submitBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            ${currentLang === 'en' ? 'Securing Clinical Slot...' : 'முன்பதிவு செய்யப்படுகிறது...'}
+          `;
+        }
+
+        // Simulate secure database submission delays
+        setTimeout(() => {
+          // Unbind loader and render Success Panel
+          const formEl = document.getElementById('appointment-form');
+          const successPanel = document.getElementById('success-panel');
+          const ticketName = document.getElementById('ticket-patient-name');
+          const ticketPhone = document.getElementById('ticket-patient-phone');
+          const ticketDept = document.getElementById('ticket-department');
+          const ticketSlot = document.getElementById('ticket-slot');
+
+          // Seed elements values to confirmation ticket receipt layout
+          if (ticketName) ticketName.textContent = nameVal;
+          if (ticketPhone) ticketPhone.textContent = phoneVal;
+          if (ticketDept) ticketDept.textContent = deptLabel;
+          // Combine date parameter and slot title
+          if (ticketSlot) ticketSlot.textContent = `${dateVal} (${timeLabel.split(' ')[0]})`;
+
+          if (formEl) formEl.classList.add('hidden');
+          if (successPanel) successPanel.classList.remove('hidden');
+
+          // Smooth scroll container wrapper back to top of section card
+          const target = document.getElementById('booking-card');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 1500);
+      }
+
+      /**
+       * Show Form error utility reporter
+       */
+      function showFormError(msg, errBox, errText) {
+        if (errBox && errText) {
+          errText.textContent = msg;
+          errBox.classList.remove('hidden');
+          const target = document.getElementById('booking-card');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+
+      /**
+       * Reset state flow allowing patients to log supplementary consultation files
+       */
+      function resetFormState() {
+        const formEl = document.getElementById('appointment-form');
+        const successPanel = document.getElementById('success-panel');
+        const submitBtn = document.getElementById('submit-form-btn');
+
+        if (formEl) {
+          formEl.reset();
+          formEl.classList.remove('hidden');
+        }
+        if (successPanel) successPanel.classList.add('hidden');
+        
+        // Reset Submit button markup 
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          submitBtn.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span class="lang-en">Request Callback Now</span>
+            <span class="lang-ta font-tamil">உடனே திரும்ப அழைக்க கோரவும்</span>
+          `;
+        }
+
+        // Run default switchLanguage to re-orient values
+        switchLanguage(currentLang);
+      }
+
+      // Initial execute on document startup
+      document.addEventListener('DOMContentLoaded', () => {
+        // Sync active state from cache
+        switchLanguage(currentLang);
+
+        // Preseed today's date parameter in Calendar choice field for seamless patient control
+        const dateInput = document.getElementById('patient-date');
+        if (dateInput) {
+          const today = new Date().toISOString().split('T')[0];
+          dateInput.min = today;
+          dateInput.value = today;
+        }
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Doctors - Sri Chakra Hospital Udumalpet</title>
+    
+    <!-- Meta description matching clinical details -->
+    <meta name="description" content="Meet our elite medical specialists and visiting consultants at Sri Chakra Hospital, Udumalpet. Dedicated multi-speciality clinical excellence in laparoscopic surgery, obstetricians, gynaecology, orthopaedics, and urology since 2011." />
+    
+    <!-- External Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750&family=Playfair+Display:ital,wght=0,600;0,700;1,500&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              tamil: ['Noto Sans Tamil', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Natively declared CSS custom properties */
+      :root {
+        --color-primary-pink: #D63384;
+        --color-deep-rose: #A0215C;
+        --color-soft-pink-bg: #FDE8F0;
+        --color-navy: #1A1A2E;
+        --color-charcoal: #555555;
+        --color-dusty-pink: #E8C4D4;
+        --color-soft-grey: #F7F0F3;
+      }
+
+      /* Language Switcher CSS engine matching dual-encoding system */
+      html[lang="en"] .lang-ta { display: none !important; }
+      html[lang="ta"] .lang-en { display: none !important; }
+      
+      /* Smooth transitions */
+      html { scroll-behavior: smooth; }
+      
+      /* Primary and outline buttons */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D63384;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px -1px rgba(214, 51, 132, 0.2);
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-primary:hover {
+        background-color: #A0215C;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 15px -3px rgba(214, 51, 132, 0.3);
+      }
+      
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #1A1A2E;
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid #E8C4D4;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-secondary:hover {
+        background-color: #FDF8FA;
+        border-color: #D63384;
+        color: #D63384;
+      }
+
+      /* Active language button state */
+      .active-lang-btn {
+        background-color: #D63384 !important;
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 min-h-screen flex flex-col justify-between font-sans selection:bg-[#D63384]/20 selection:text-[#A0215C]">
+
+    <!-- PART 1: HEADER SECTION WITH TOP UTILITY BAR (SYNCED LANGUAGE SWITCHER) -->
+    <header id="hospital-header" class="w-full relative z-40 shadow-sm font-sans">
+      <!-- Top Utility Bar (Pink & Navy Accent) -->
+      <div class="w-full py-2 bg-[#1A1A2E] text-white text-xs border-b border-[#A0215C]">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+          
+          <!-- Contact Info -->
+          <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+            <a href="tel:+919626200600" class="flex items-center gap-1.5 hover:text-[#D63384] transition-colors focus:outline-none" aria-label="Call Hospital">
+              <!-- Telephone Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#D63384]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span class="font-mono font-medium text-slate-200">+91 96 26 200 600</span>
+            </a>
+            <a href="mailto:contact@srichakrahospital.com" class="flex items-center gap-1.5 hover:text-[#D63384] transition-colors focus:outline-none" aria-label="Email Hospital">
+              <!-- Email Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#D63384]"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span class="text-slate-200">contact@srichakrahospital.com</span>
+            </a>
+          </div>
+
+          <!-- Emergency Alert / Status Toggles -->
+          <div class="flex items-center gap-4">
+            <!-- Live Alert Status -->
+            <div class="flex items-center gap-2">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D63384] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#D63384]"></span>
+              </span>
+              <span class="lang-en font-medium tracking-wide text-slate-300">Emergency Support 24/7 Available</span>
+              <span class="lang-ta font-tamil font-medium tracking-wide text-slate-300">அவசர சிகிச்சை பிரிவு 24 மணி நேரமும் செயல்படுகிறது</span>
+            </div>
+
+            <!-- Language Switcher Interface (Interactive buttons) -->
+            <div class="flex items-center bg-[#1F1F35] rounded-full p-0.5 border border-slate-700" role="group" aria-label="Select Language">
+              <button id="lang-btn-en" onclick="switchLanguage('en')" class="px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white focus:outline-none transition-all">
+                EN
+              </button>
+              <button id="lang-btn-ta" onclick="switchLanguage('ta')" class="px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 font-tamil focus:outline-none transition-all hover:text-[#D63384]">
+                தமிழ்
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Primary Main Navigation Element -->
+      <nav class="w-full bg-white border-b border-rose-100 py-3 md:py-4">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+          
+          <!-- Brand Logo / Title -->
+          <a href="/" class="flex items-center gap-3 group focus:outline-none" aria-label="Sri Chakra Hospital Home">
+            <!-- Healthcare Logo Icon -->
+            <div class="w-10 h-10 rounded-xl bg-[#FDE8F0] flex items-center justify-center border border-[#E8C4D4] group-hover:scale-105 transition-transform duration-300 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="fill-[#D63384]/10"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-bold text-xl md:text-2xl text-[#1A1A2E] leading-tight flex items-baseline">
+                <span>Sri Chakra</span>
+                <span class="text-[#D63384] ml-1">Hospital</span>
+              </span>
+              <span class="text-[9px] uppercase tracking-widest font-semibold text-[#A0215C] mt-0.5 font-tamil lang-ta">ஸ்ரீ சக்ரா மருத்துவமனை</span>
+              <span class="text-[9px] uppercase tracking-widest font-semibold text-[#A0215C] mt-0.5 lang-en">Udumalpet Multi-Speciality</span>
+            </div>
+          </a>
+
+          <!-- Desktop English & Tamil Menu Options -->
+          <div class="hidden md:flex items-center gap-8 font-medium text-sm text-[#1A1A2E]">
+            <!-- EN Menu Options -->
+            <div class="flex items-center gap-7 lang-en">
+              <a href="/#home" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Home</a>
+              <a href="/#about" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">About Us</a>
+              <a href="/#services" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Specialities</a>
+              <a href="/doctors.html" class="text-[#D63384] py-1 border-b-2 border-[#D63384] font-semibold">Doctors</a>
+              <a href="/#testimonials" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Reviews</a>
+              <a href="/#contact" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">Contact</a>
+            </div>
+
+            <!-- TA Menu Options -->
+            <div class="flex items-center gap-7 lang-ta font-tamil">
+              <a href="/#home" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">முகப்பு</a>
+              <a href="/#about" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">எங்களைப் பற்றி</a>
+              <a href="/#services" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">சிறப்பு சிகிச்சைகள்</a>
+              <a href="/doctors.html" class="text-[#D63384] py-1 border-b-2 border-[#D63384] font-semibold">மருத்துவர்கள்</a>
+              <a href="/#testimonials" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">மதிப்புரைகள்</a>
+              <a href="/#contact" class="hover:text-[#D63384] transition-colors py-1 border-b-2 border-transparent hover:border-[#D63384]">தொடர்பு</a>
+            </div>
+          </div>
+
+          <!-- Navigation Actions Header -->
+          <div class="flex items-center gap-3">
+            <!-- Pink "Book Appointment" Action Button -->
+            <a href="/appointment.html" class="btn-primary" aria-label="Book an appointment">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span class="lang-en">Book Appointment</span>
+              <span class="lang-ta font-tamil">முன்பதிவு செய்ய</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-rose-50 text-[#1A1A2E] focus:outline-none" aria-expanded="false" aria-label="Toggle navigation menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Mobile Drawer Dropdown Menu -->
+        <div id="mobile-menu-nav" class="hidden md:hidden w-full bg-white border-t border-rose-100 py-3 mt-2 px-4 shadow-inner">
+          <div class="flex flex-col gap-3 text-sm text-[#1A1A2E] font-medium py-2">
+            <div class="flex flex-col gap-3 lang-en">
+              <a href="/#home" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Home</a>
+              <a href="/#about" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">About Us</a>
+              <a href="/#services" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Specialities</a>
+              <a href="/doctors.html" onclick="toggleMobileMenu()" class="py-2 px-3 rounded bg-rose-50 text-[#D63384] font-semibold">Doctors</a>
+              <a href="/#testimonials" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Reviews</a>
+              <a href="/#contact" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">Contact</a>
+            </div>
+            <div class="flex flex-col gap-3 lang-ta font-tamil">
+              <a href="/#home" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">முகப்பு</a>
+              <a href="/#about" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">எங்களைப் பற்றி</a>
+              <a href="/#services" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">சிறப்பு சிகிச்சைகள்</a>
+              <a href="/doctors.html" onclick="toggleMobileMenu()" class="py-2 px-3 rounded bg-rose-50 text-[#D63384] font-semibold">மருத்துவர்கள்</a>
+              <a href="/#testimonials" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">மதிப்புரைகள்</a>
+              <a href="/#contact" onclick="toggleMobileMenu()" class="py-2 px-3 rounded hover:bg-rose-50">தொடர்பு</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTION TITLE AND FLOATING SUBHEADER BACKGROUND -->
+    <div class="bg-gradient-to-b from-[#FDE8F0]/40 to-slate-50 border-b border-rose-100/50 py-10 md:py-14">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 text-center space-y-3">
+        <span class="text-xs uppercase font-bold text-[#D63384] tracking-widest block font-sans">
+          <span class="lang-en">Elite Medical Specialists</span>
+          <span class="lang-ta font-tamil">எங்கள் மருத்துவக் குழு</span>
+        </span>
+        <h1 class="text-3xl md:text-4.5xl font-serif font-bold text-[#1A1A2E] leading-tight">
+          <span class="lang-en">Our Medical Team</span>
+          <span class="lang-ta font-tamil">தலைமை மற்றும் சிறப்பு மருத்துவர்கள்</span>
+        </h1>
+        <div class="h-1 w-20 bg-[#D63384] mx-auto rounded-full"></div>
+        <p class="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <span class="lang-en">Sri Chakra Hospital is home to highly accomplished medical leaders, resident surgical pioneers, and visiting consultants trained at top regional centres of excellence—caring compassionately in Udumalpet since 2011.</span>
+          <span class="lang-ta font-tamil font-medium">ஸ்ரீ சக்ரா மருத்துவமனை 2011 முதல் உடுமலையில் அதிநவீன மற்றும் நம்பகமான பல்நோக்கு மருத்துவ சேவைகளை வழங்கி வருகிறது. தகுதி வாய்ந்த தலைமை மருத்துவர்கள் மற்றும் பிற சிறப்பு ஆலோசகர்களின் உன்னத வழிகாட்டுதல்கள் இங்கு எளிதாக கிடைக்கும்.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN BODY CONTENT GRID -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 md:px-6 py-12 w-full space-y-16">
+
+      <!-- SECTION 2: RESIDENT SPECIALISTS (PRIMARY HEADERS) -->
+      <section id="resident-specialists" class="space-y-8">
+        
+        <div class="border-b border-rose-100 pb-4">
+          <h2 class="text-2xl font-serif font-bold text-[#1A1A2E] flex items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0"><path d="m12 14 4-4 4 4"></path><path d="M4 20V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8"></path><path d="M4 12h16"></path></svg>
+            <span class="lang-en">Resident Medical Directors</span>
+            <span class="lang-ta font-tamil text-2xl">உள்முக மருத்துவ இயக்குநர்கள்</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            <span class="lang-en">Our resident full-time leadership managing clinical operations and surgical procedures daily.</span>
+            <span class="lang-ta font-tamil text-slate-400">உடுமலைப்பேட்டையில் தினம் முழுநேர சேவைகளை வழங்கும் மேலாண் மற்றும் தலைமை அறுவைசிகிச்சை இயக்குநர்கள்.</span>
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          
+          <!-- Card 1: Dr. M. Ashok -->
+          <article class="bg-white border-2 border-rose-100/70 hover:border-[#D63384] hover:shadow-xl rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between group">
+            <div class="p-6 md:p-8 space-y-6">
+              
+              <!-- Circle Image Boundary Frame with Pink Accent Border -->
+              <div class="relative w-36 h-36 rounded-full border-4 border-[#D63384] p-1 bg-white mx-auto shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0">
+                <div class="w-full h-full rounded-full bg-gradient-to-tr from-[#1A1A2E] to-[#A0215C] text-white flex flex-col items-center justify-center relative overflow-hidden">
+                  <span class="font-serif font-bold text-3xl tracking-wider">MA</span>
+                  <span class="text-[9px] uppercase tracking-widest font-mono font-bold opacity-80 mt-1">Surgeon</span>
+                  
+                  <!-- Stethoscope SVG overlay -->
+                  <div class="absolute bottom-2 inset-x-0 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" class="text-white"><circle cx="12" cy="12" r="10"></circle><path d="M8 12a4 4 0 0 0 8 0"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content details Section -->
+              <div class="text-center space-y-3">
+                <div class="space-y-1">
+                  <!-- Bold Navy Name -->
+                  <h3 class="font-serif font-bold text-xl md:text-2xl text-[#1A1A2E]">
+                    <span class="lang-en">Dr. M. Ashok</span>
+                    <span class="lang-ta font-tamil text-[21px]">டாக்டர் M. அசோக்</span>
+                  </h3>
+                  
+                  <!-- Deep Pink Qualification text -->
+                  <p class="text-sm font-bold text-[#A0215C] tracking-wide font-mono">
+                    <span class="lang-en">M.B.B.S., M.S. (General Surgery), FIAGES, FALS</span>
+                    <span class="lang-ta font-tamil text-xs">M.B.B.S., M.S. (பொது அறுவைசிகிச்சை), FIAGES, FALS</span>
+                  </p>
+                </div>
+
+                <!-- Body Gray Designation -->
+                <p class="text-xs font-semibold text-slate-500 bg-rose-50/70 border border-rose-100 rounded-lg py-2 px-3 inline-block max-w-[90%] mx-auto">
+                  <span class="lang-en">Managing Director & Chief Advanced Laparoscopic Surgeon & Endoscopist</span>
+                  <span class="lang-ta font-tamil text-xs">மேலாண் இயக்குநர் & தலைமை லேப்ராஸ்கோபி மற்றும் எண்டோஸ்கோபி அறுவைசிகிச்சை நிபுணர்</span>
+                </p>
+
+                <p class="text-xs text-slate-500 leading-relaxed max-w-sm mx-auto pt-2 border-t border-slate-100 font-sans">
+                  <span class="lang-en">With over 15 years of exceptional clinical tenure, Dr. M. Ashok specializes in complex single-incision laparoscopic procedures (keyhole surgeries), diagnostic endoscopies, and modern gastrointestinal keyhole treatments.</span>
+                  <span class="lang-ta font-tamil text-[13px] leading-relaxed">மிகவும் துல்லியமான லேப்ராஸ்கோபி மற்றும் எண்டோஸ்கோபி அறுவைசிகிச்சைகளில் 15 ஆண்டுகளுக்கும் மேலான உன்னத அனுபவமுள்ள எமது தலைமை அறுவைசிகிச்சை மருத்துவர்.</span>
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Actionable Button on Each Card pointing to layout /appointment.html -->
+            <div class="p-6 pt-0 text-center bg-slate-50/50 border-t border-rose-50">
+              <a href="/appointment.html" class="w-full btn-primary text-xs flex justify-center items-center py-3" aria-label="Book appointment with Dr. M. Ashok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span class="lang-en">Book Consultation Slot</span>
+                <span class="lang-ta font-tamil">ஆலோசனை பெற முன்பதிவு செய்</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Dr. Savitha Ashok -->
+          <article class="bg-white border-2 border-rose-100/70 hover:border-[#D63384] hover:shadow-xl rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between group">
+            <div class="p-6 md:p-8 space-y-6">
+              
+              <!-- Circle Image Boundary Frame with Pink Accent Border -->
+              <div class="relative w-36 h-36 rounded-full border-4 border-[#D63384] p-1 bg-white mx-auto shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0">
+                <div class="w-full h-full rounded-full bg-gradient-to-tr from-[#1A1A2E] to-[#D63384] text-white flex flex-col items-center justify-center relative overflow-hidden">
+                  <span class="font-serif font-bold text-3xl tracking-wider">SA</span>
+                  <span class="text-[9px] uppercase tracking-widest font-mono font-bold opacity-80 mt-1">OBGYN</span>
+                  
+                  <!-- Stethoscope SVG overlay -->
+                  <div class="absolute bottom-2 inset-x-0 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2.5" class="text-white"><circle cx="12" cy="12" r="10"></circle><path d="M8 12a4 4 0 0 0 8 0"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content details Section -->
+              <div class="text-center space-y-3">
+                <div class="space-y-1">
+                  <!-- Bold Navy Name -->
+                  <h3 class="font-serif font-bold text-xl md:text-2xl text-[#1A1A2E]">
+                    <span class="lang-en">Dr. Savitha Ashok</span>
+                    <span class="lang-ta font-tamil text-[21px]">டாக்டர் சவிதா அசோக்</span>
+                  </h3>
+                  
+                  <!-- Deep Pink Qualification text -->
+                  <p class="text-sm font-bold text-[#A0215C] tracking-wide font-mono">
+                    <span class="lang-en">M.B.B.S., D.G.O., Fellowship in ART (Infertility)</span>
+                    <span class="lang-ta font-tamil text-xs">M.B.B.S., D.G.O., Fellowship in ART (மலட்டுத்தன்மை சிகிச்சை)</span>
+                  </p>
+                </div>
+
+                <!-- Body Gray Designation -->
+                <p class="text-xs font-semibold text-slate-500 bg-rose-50/70 border border-rose-100 rounded-lg py-2 px-3 inline-block max-w-[90%] mx-auto">
+                  <span class="lang-en">Chief Obstetrician, Gynaecologist & Infertility Specialist</span>
+                  <span class="lang-ta font-tamil text-xs">தலைமை மகப்பேறியல், பெண் நோயியல் & மலட்டுத்தன்மை சிகிச்சை நிபுணர்</span>
+                </p>
+
+                <p class="text-xs text-slate-500 leading-relaxed max-w-sm mx-auto pt-2 border-t border-slate-100 font-sans">
+                  <span class="lang-en">A compassionate expert in fertility solutions and high-risk pregnancy management, Dr. Savitha Ashok provides outstanding gynecological surgeries, painless labor care, and dedicated reproductive counsel.</span>
+                  <span class="lang-ta font-tamil text-[13px] leading-relaxed">மலட்டுத்தன்மை தீர்வுகள், பிரசவ கால தீவிர சிகிச்சைகள் மற்றும் கர்ப்பகால தாய்-சேய் நலம் ஆகியவற்றில் 15 வருடங்களுக்கும் மேலான அனுபவம் கொண்ட சிறப்பு நிபுணர்.</span>
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Actionable Button on Each Card pointing to layout /appointment.html -->
+            <div class="p-6 pt-0 text-center bg-slate-50/50 border-t border-rose-50">
+              <a href="/appointment.html" class="w-full btn-primary text-xs flex justify-center items-center py-3" aria-label="Book appointment with Dr. Savitha Ashok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span class="lang-en">Book Consultation Slot</span>
+                <span class="lang-ta font-tamil">ஆலோசனை பெற முன்பதிவு செய்</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: VISITING CONSULTANTS SECTION (3-COLUMN CONFIGURATION) -->
+      <section id="visiting-panel" class="space-y-8 bg-white border border-rose-100/70 p-6 md:p-10 rounded-3xl shadow-sm">
+        
+        <div class="border-b border-rose-100 pb-4 text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs uppercase font-bold text-[#D63384] tracking-wider block font-sans">
+            <span class="lang-en">Comprehensive Coverage</span>
+            <span class="lang-ta font-tamil">சிறப்பு வாராந்திரப் பிரிவு</span>
+          </span>
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-[#1A1A2E] flex justify-center items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span class="lang-en">Visiting Panel of Consultants</span>
+            <span class="lang-ta font-tamil">வாராந்திர சிறப்பு ஆலோசகர்கள்</span>
+          </h2>
+          <p class="text-xs text-slate-500 leading-relaxed font-sans">
+            <span class="lang-en">In collaboration with premier regional superspeciality centers from Coimbatore and Tiruppur, ensuring absolute continuity of surgical and diagnostic expertise in Udumalpet.</span>
+            <span class="lang-ta font-tamil font-medium">கோயம்புத்தூர் மற்றும் திருப்பூர் வட்டாரத்தின் முன்னணி மருத்துவமனைகளின் மூத்த அறுவை சிகிச்சை நிபுணர்கள் கொண்டு வாரந்தோறும் வழங்கப்படும் சிறப்பு சிகிச்சைகள்.</span>
+          </p>
+        </div>
+
+        <!-- 3-Column Micro-card Configuration Detailing the Visiting Panel -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1: Orthopaedics -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Orthopaedics</span>
+                  <span class="lang-ta font-tamil text-[9px]">எலும்பியல்</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">MON / சனிக்கிழமை</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. S. K. Karthik</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் S. K. கார்த்திக்</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.S. (Ortho), Fellowship in Arthroplasty</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.S. (எலும்பியல்), Fellowship in Arthroplasty</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Joint Replacement & Knee Keyhole Surgery</span>
+                    <span class="lang-ta font-tamil">மூட்டு மாற்று மற்றும் விளையாட்டுக் காயம் மூட்டு கனிம அறுவைசிகிச்சை</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">Joint & Spine Institute, Tiruppur</span>
+                <span class="lang-ta font-tamil text-[10px]">கோவை எலும்பியல் மற்றும் மூட்டு மாற்று சிகிச்சை மையம்</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Urology -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Urology</span>
+                  <span class="lang-ta font-tamil text-[9px]">சிறுநீரகம்</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">WED / புதன்கிழமை</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. R. Madhavan</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் R. மாதவன்</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.Ch (Urology), DNB (Urology)</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.Ch (சிறுநீரகம்), DNB (சிறுநீரக சிறப்பு மருத்துவம்)</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Keyhole Urology Surgery & Stone Extraction</span>
+                    <span class="lang-ta font-tamil">சிறுநீரகக் கல் அகற்றுதல் & நுண் துளை泌சிகிச்சைகள்</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">Royal Care Specialty Hospital, Coimbatore</span>
+                <span class="lang-ta font-tamil text-[10px]">ராயல் கேர் சூப்பர் ஸ்பெஷாலிட்டி மருத்துவமனை, கோவை</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Oncology Diagnostics & Care -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Oncology</span>
+                  <span class="lang-ta font-tamil text-[9px]">புற்றுநோயியல்</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">THU / வியாழன்</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. K. Nithya</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் K. நித்யா</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.D. (Oncology), DM (Medical Oncology)</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.D. (கதிர்வீச்சு புற்றுநோயியல்), DM (புற்றுநோய் மருத்துவம்)</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Diagnostics, Custom Chemotherapy & Screening</span>
+                    <span class="lang-ta font-tamil">புற்றுநோய் முன்கூட்டியே கண்டறிதல் மற்றும் கீமோதெரபி</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">G.K.N.M. Oncology Centre, Coimbatore</span>
+                <span class="lang-ta font-tamil text-[10px]">ஜி. குப்புசாமி நாயுடு நினைவு மெமோரியல் ட்ரஸ்ட் (GKNM), கோவை</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Paediatric Surgery -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Paediatric Surgery</span>
+                  <span class="lang-ta font-tamil text-[9px]">குழந்தைகள் நல அறுவை</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">TUE / செவ்வாய்</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. T. Rajesh</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் T. ராஜேஷ்</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.S., M.Ch (Paediatric Surgery)</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.S. (பொது அறுவைசிகிச்சை), M.Ch (குழந்தைகள் அறுவைசிகிச்சை)</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Congenital Malformation Surgeries & Infant Care</span>
+                    <span class="lang-ta font-tamil">பிறவிக் குறைபாடு திருத்த அறுவைசிகிச்சை & சிறுவர் மருத்துவம்</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">PSG Hospitals & Research Institute, Coimbatore</span>
+                <span class="lang-ta font-tamil text-[10px]">பி.எஸ்.ஜி மருத்துவமனை மற்றும் ஆராய்ச்சி நிறுவனம், கோவை</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5: Spine Surgery -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Spine Surgery</span>
+                  <span class="lang-ta font-tamil text-[9px]">தண்டுவடம்</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">FRI / வெள்ளிக்கிழமை</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. A. Vinoth</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் A. வினோத்</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.S., M.Ch (Neurosurgery), Spine Fellowship</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.S., M.Ch (நியூரோ சர்ஜரி), தண்டுவட மாற்று பயிற்சி</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Minimally Invasive Spine Procedures & Disc Therapy</span>
+                    <span class="lang-ta font-tamil">தண்டுவட சவ்வு விலகல் மற்றும் நவீன மைக்ரோ சர்ஜரி</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">Kovai Medical Center and Hospital (KMCH)</span>
+                <span class="lang-ta font-tamil text-[10px]">கோயம்புத்தூர் கே. எம். சி. ஹெச் மருத்துவமனை (KMCH)</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 6: Plastic Surgery -->
+          <article class="bg-slate-50/50 hover:bg-white border border-rose-50 hover:border-[#E8C4D4] rounded-2.5xl p-6 transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <!-- Specialty Header Indicator -->
+              <div class="flex items-center justify-between">
+                <span class="bg-[#FDE8F0] text-[#D63384] text-[10px] uppercase font-mono font-bold px-2.5 py-1 rounded-full border border-[#E8C4D4] shrink-0">
+                  <span class="lang-en">Plastic Surgery</span>
+                  <span class="lang-ta font-tamil text-[9px]">அழகு / சீரமைப்பு அறுவை</span>
+                </span>
+                <span class="text-slate-400 font-mono text-[10px] font-bold">ON CALL / தேவைப்படும் போது</span>
+              </div>
+
+              <div class="space-y-1">
+                <h4 class="font-serif font-bold text-base text-[#1A1A2E] group-hover:text-[#D63384] transition-colors leading-snug">
+                  <span class="lang-en">Dr. S. Deepa</span>
+                  <span class="lang-ta font-tamil text-[15px]">டாக்டர் S. தீபா</span>
+                </h4>
+                <p class="text-xs text-[#A0215C] font-semibold font-mono">
+                  <span class="lang-en">M.S., M.Ch (Plastic & Reconstructive Surgery)</span>
+                  <span class="lang-ta font-tamil text-[10px]">M.S., M.Ch (பிளாஸ்டிக் & சீரமைப்பு அறுவைசிகிச்சை)</span>
+                </p>
+              </div>
+
+              <!-- Specialty Parameter -->
+              <div class="text-xs font-sans text-slate-600 leading-relaxed pt-1.5 border-t border-rose-50 space-y-1">
+                <p class="flex items-start gap-1">
+                  <strong class="font-bold text-slate-700 select-none">•</strong>
+                  <span>
+                    <span class="lang-en">Reconstructive Microsurgeries & Burn Management</span>
+                    <span class="lang-ta font-tamil">தீக்காய தழும்பு சீரமைப்பு மைக்ரோ சர்ஜரி மற்றும் பிளாஸ்டிக் அறுவை</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Affiliated Medical Institution -->
+            <div class="pt-2">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 block font-sans">
+                <span class="lang-en">Affiliation</span>
+                <span class="lang-ta font-tamil">இணைப்பு</span>
+              </span>
+              <p class="text-[11px] font-semibold text-[#1A1A2E] mt-0.5 leading-tight font-sans">
+                <span class="lang-en">Ganga Hospital & Trauma Centre, Coimbatore</span>
+                <span class="lang-ta font-tamil text-[10px]">கங்கா மருத்துவமனை மற்றும் அதிதீவிர காயம்பட்டோர் விபத்துப்பிரிவு, கோவை</span>
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="bg-[#FDE8F0]/30 border border-[#E8C4D4]/50 rounded-2xl p-5 text-center text-xs text-slate-600 max-w-xl mx-auto">
+          <p class="lang-en font-medium">💡 <strong>Note about Visiting Schedules:</strong> Visiting specialists schedule dates are subject to patient volume locks and on-call emergency surgical requirements. Patients are strictly requested to confirm schedules with our administration via <a href="tel:+919626200600" class="text-[#D63384] hover:underline font-mono font-bold">+91 96 26 200 600</a>.</p>
+          <p class="lang-ta font-tamil font-semibold text-[13px] leading-relaxed">💡 <strong>சிறப்பு குறிப்பு:</strong> அவசர அறுவைசிகிச்சை தேவைகள் காரணமாக சிறப்பு ஆலோசனைக் காலங்கள் மாற்றியமைக்கப்படலாம். எனவே வருகைக்கு முன் எங்கள் உதவி மையத்தை <a href="tel:+919626200600" class="text-[#D63384] hover:underline font-mono font-bold">96 26 200 600</a> என்ற எண்ணில் அழைத்து உறுதிப்படுத்திக் கொள்ளவும்.</p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- PART 3: STATIC COMPREHENSIVE FOOTER WITH LOCATION MAP -->
+    <footer id="hospital-footer" class="w-full bg-[#1A1A2E] text-slate-300 pt-16 pb-8 border-t-2 border-[#D63384] font-sans">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        
+        <!-- main footer grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+          
+          <!-- Column 1: Hospital Mission Statement -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-[#A0215C] flex items-center justify-center border border-[#D63384] shadow animate-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <span class="font-serif font-bold text-xl text-white">
+                <span>Sri Chakra</span>
+                <span class="text-[#D63384]">Hospital</span>
+              </span>
+            </div>
+            
+            <p class="lang-en text-xs text-slate-400 leading-relaxed mt-2">
+              Providing high-quality compassionate care to the Udumalpet community. Embellished with top-tier multi-speciality diagnosis and modern critical emergency facilities.
+            </p>
+            <p class="lang-ta font-tamil text-xs text-slate-400 leading-relaxed mt-2">
+              உடுமலைப்பேட்டை மக்களுக்கு உயர்தர மற்றும் கனிவான மருத்துவ சேவைகளை வழங்கி வருகிறோம். நவீன அவசர சிகிச்சை தொழில்நுட்பங்களுடன் சிறந்த உள்நோயாளிகள் வசதி கொண்டது.
+            </p>
+
+            <div class="flex items-center gap-3 mt-2 text-slate-400">
+              <span class="text-xs uppercase font-bold tracking-widest text-[#D63384] lang-en mr-1">Follow Us</span>
+              <span class="text-xs uppercase font-bold tracking-widest text-[#D63384] lang-ta font-tamil mr-1">பின்தொடரவும்</span>
+              <a href="#facebook" class="hover:text-white transition-colors animate-bounce" aria-label="Facebook Page"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="#youtube" class="hover:text-white transition-colors" aria-label="YouTube Channel"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation Quick-Links -->
+          <div class="flex flex-col gap-4 md:pl-4">
+            <div>
+              <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-1 lang-en">Quick Links</h4>
+              <h4 class="text-white font-tamil text-sm font-semibold tracking-wider uppercase mb-1 lang-ta">விரைவு இணைப்புகள்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <ul class="flex flex-col gap-2.5 text-xs text-slate-400">
+              <li class="lang-en"><a href="/#home" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Home</a></li>
+              <li class="lang-ta font-tamil"><a href="/#home" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> முகப்பு</a></li>
+
+              <li class="lang-en"><a href="/#about" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> About Us</a></li>
+              <li class="lang-ta font-tamil"><a href="/#about" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> எங்களைப் பற்றி</a></li>
+
+              <li class="lang-en"><a href="/#services" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Specialities & Services</a></li>
+              <li class="lang-ta font-tamil"><a href="/#services" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> சிறப்பு சிகிச்சைகள்</a></li>
+
+              <li class="lang-en"><a href="/doctors.html" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Doctor Schedule</a></li>
+              <li class="lang-ta font-tamil"><a href="/doctors.html" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> மருத்துவர்கள் அட்டவணை</a></li>
+
+              <li class="lang-en"><a href="/appointment.html" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Appointment Booking</a></li>
+              <li class="lang-ta font-tamil"><a href="/appointment.html" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> இணையவழி முன்பதிவு</a></li>
+
+              <li class="lang-en"><a href="#terms" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> Terms & Guidelines</a></li>
+              <li class="lang-ta font-tamil"><a href="#terms" class="hover:text-white transition-colors flex items-center gap-2"><span>•</span> விதிமுறைகள் மற்றும் கொள்கை</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Details & Opening Hours -->
+          <div class="flex flex-col gap-4">
+            <div>
+              <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-1 lang-en">Contact & Hours</h4>
+              <h4 class="text-white font-tamil text-sm font-semibold tracking-wider uppercase mb-1 lang-ta">தொடர்பு & நேரம்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <div class="flex flex-col gap-3 text-xs text-slate-400">
+              <!-- Address -->
+              <div class="flex items-start gap-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" class="mt-0.5 shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div>
+                  <strong class="text-white lang-en">Sri Chakra Hospital</strong>
+                  <strong class="text-white font-tamil lang-ta">ஸ்ரீ சக்ரா மருத்துவமனை</strong>
+                  <p class="lang-en mt-1 leading-relaxed">4/147 Nehru Street, Udumalpet - 642126, Tiruppur Dist, Tamil Nadu</p>
+                  <p class="lang-ta font-tamil mt-1 leading-relaxed">4/147 நேரு தெரு, உடுமலைப்பேட்டை - 642126, திருப்பூர் மாவட்டம், தமிழ்நாடு</p>
+                </div>
+              </div>
+
+              <!-- Hotline details -->
+              <div class="flex items-center gap-2.5 pt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" class="shrink-0"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                <div>
+                  <span class="lang-en text-[10px] uppercase font-bold text-[#D63384] block font-sans">Hotline Booking</span>
+                  <span class="lang-ta font-tamil text-[10px] uppercase font-bold text-[#D63384] block">முன்பதிவு எண்</span>
+                  <a href="tel:+919626200600" class="hover:text-white transition-colors font-mono font-bold text-[13px] text-slate-100 mt-0.5 block">96 26 200 600</a>
+                </div>
+              </div>
+
+              <!-- Opening Hours details -->
+              <div class="flex items-start gap-2.5 pt-1 border-t border-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D63384" stroke-width="2" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div>
+                  <strong class="text-white lang-en">Opening Hours</strong>
+                  <strong class="text-white font-tamil lang-ta">வேலை நேரங்கள்</strong>
+                  <div class="lang-en mt-1 text-slate-400 space-y-1">
+                    <p><span class="text-white">Emergency Support:</span> 24 Hours / 7 Days</p>
+                    <p><span class="text-white">General Outpatients:</span> Mon - Sat, 9 AM - 8 PM</p>
+                  </div>
+                  <div class="lang-ta font-tamil mt-1 text-slate-400 space-y-1">
+                    <p><span class="text-white">அவசர சிகிச்சை:</span> 24 மணிநேரமும் / 7 நாட்களும்</p>
+                    <p><span class="text-white">நாடிப் பரிசோதனை:</span> திங்கள் - சனி, காலை 9 - இரவு 8</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 4: Location Map Thumbnail Placeholder -->
+          <div class="flex flex-col gap-4">
+            <div>
+              <h4 class="text-white text-sm font-semibold tracking-wider uppercase mb-1 lang-en">Hospital Location Map</h4>
+              <h4 class="text-white font-tamil text-sm font-semibold tracking-wider uppercase mb-1 lang-ta">அமைவிட வரைபடம்</h4>
+              <div class="h-[2px] w-12 bg-[#D63384] rounded mt-1"></div>
+            </div>
+
+            <div class="relative w-full rounded-xl overflow-hidden shadow-md group border border-slate-800 bg-[#161626]" style="aspect-ratio: 4/3;">
+              <div class="absolute inset-0 bg-[#e8ecf4] opacity-80 flex items-center justify-center pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0">
+                  <defs>
+                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfd7e6" stroke-width="0.5"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+                  <path d="M-10,50 L200,80 L350,110" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M-10,50 L200,80 L350,110" fill="none" stroke="#ffebc5" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M120,-10 L140,200" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+                  <path d="M120,-10 L140,200" fill="none" stroke="#ffebc5" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M60,110 Q160,120 220,50" fill="none" stroke="#ffffff" stroke-width="6" stroke-dasharray="2,2"/>
+                  <circle cx="132" cy="71" r="28" fill="#D63384" fill-opacity="0.12"/>
+                  <rect x="20" y="10" width="50" height="30" rx="3" fill="#cfebd3" stroke="#b0dab6" stroke-width="1"/>
+                </svg>
+              </div>
+              
+              <!-- Pin Pointer -->
+              <div class="absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <span class="relative flex h-5 w-5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D63384] opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-5 w-5 bg-[#D63384] border-2 border-white flex items-center justify-center shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fill-white"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path></svg>
+                  </span>
+                </span>
+                <div class="bg-slate-900 border border-[#D63384] text-white text-[9px] font-semibold py-0.5 px-1.5 rounded mt-1 whitespace-nowrap shadow-md max-w-xs font-serif">
+                  Sri Chakra Hospital
+                </div>
+              </div>
+
+              <!-- Coordinates overlay bar -->
+              <div class="absolute bottom-0 inset-x-0 bg-slate-950/80 p-2 backdrop-blur-sm flex justify-between items-center text-[10px]">
+                <span class="font-mono text-slate-400">10.5186° N, 77.2471° E</span>
+                <a href="https://maps.google.com/?q=Sri+Chakra+Hospital+Nehru+Street+Udumalpet" target="_blank" rel="noopener noreferrer" class="text-[#D63384] hover:text-[#FFFFFF] transition-colors font-semibold flex items-center gap-1 focus:outline-none" aria-label="Open Directions in Google Maps">
+                  <span class="lang-en">Directions</span>
+                  <span class="lang-ta font-tamil">திசைவழி</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full h-px bg-slate-800 my-6"></div>
+
+        <!-- Copyright and Disclaimer -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+          <div>
+            <p class="lang-en">© 2026 Sri Chakra Hospital. All rights reserved. Registered Multi-Speciality Clinic, Udumalpet.</p>
+            <p class="lang-ta font-tamil">© 2026 ஸ்ரீ சக்ரா மருத்துவமனை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. உடுமலைப்பேட்டை.</p>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <a href="#privacy" class="hover:text-slate-300 transition-colors">
+              <span class="lang-en">Privacy Policy</span>
+              <span class="lang-ta font-tamil">தனியுரிமைக் கொள்கை</span>
+            </a>
+            <a href="#disclaimer" class="hover:text-slate-300 transition-colors">
+              <span class="lang-en">Disclaimer</span>
+              <span class="lang-ta font-tamil">பொறுப்புத் துறப்பு</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT ENGINE FOR REGISTRATION -->
+    <script>
+      // Global Language State tracking sync using localStorage cache layer
+      let currentLang = localStorage.getItem('srichakra_lang') || 'en';
+
+      /**
+       * Primary Switch Language worker
+       * @param {string} langCode 'en' or 'ta'
+       */
+      function switchLanguage(langCode) {
+        currentLang = langCode;
+        localStorage.setItem('srichakra_lang', langCode);
+        document.documentElement.setAttribute('lang', langCode);
+        
+        // Sync active selector styling flags
+        const btnEn = document.getElementById('lang-btn-en');
+        const btnTa = document.getElementById('lang-btn-ta');
+        
+        if (langCode === 'en') {
+          if (btnEn) btnEn.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white focus:outline-none transition-all";
+          if (btnTa) btnTa.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 font-tamil focus:outline-none transition-all hover:text-[#D63384]";
+        } else {
+          if (btnEn) btnEn.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold text-slate-400 focus:outline-none transition-all hover:text-[#D63384]";
+          if (btnTa) btnTa.className = "px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-wider font-semibold active-lang-btn text-white font-tamil focus:outline-none transition-all";
+        }
+      }
+
+      /**
+       * Toggle Mobile Menu visibility Drawer helper
+       */
+      function toggleMobileMenu() {
+        const menuNav = document.getElementById('mobile-menu-nav');
+        const btn = document.getElementById('mobile-menu-btn');
+        if (menuNav) {
+          const isHidden = menuNav.classList.contains('hidden');
+          if (isHidden) {
+            menuNav.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+          } else {
+            menuNav.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        }
+      }
+
+      // Initial execute on document startup
+      document.addEventListener('DOMContentLoaded', () => {
+        // Sync active state from cache
+        switchLanguage(currentLang);
+      });
+    </script>
+
+  </body>
+</html>
